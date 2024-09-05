@@ -14,10 +14,9 @@ public class NewDash : MonoBehaviour
     private float currentCooldownTime; 
     private bool isDashing = false;
     private bool isCooldown = false; 
-    //public TargetLock TargetLock;
     public GameObject image;
     public GameObject imageEmpty;
-    public Transform dashDirection;
+   
 
 
     private void Start()
@@ -60,7 +59,7 @@ public class NewDash : MonoBehaviour
                 ApplyDashForce();
             }*/
 
-            ApplyDashForce(dashDirection);
+            ApplyDashForce();
 
             currentDashTime -= Time.deltaTime;
             if (currentDashTime <= 0)
@@ -76,9 +75,9 @@ public class NewDash : MonoBehaviour
         currentDashTime = dashDuration;
     }
 
-    public void ApplyDashForce(Transform directionTransform)
+    public void ApplyDashForce()
     {
-        Vector3 direction = directionTransform.forward;
+        Vector3 direction = transform.forward; 
 
         if (controller != null)
         {

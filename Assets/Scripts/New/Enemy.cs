@@ -17,33 +17,13 @@ public class Enemy : MonoBehaviour
     public float dashSpeed;
     public float dashTime;  
     private bool Dashing = false;
+   
 
     private void Start()
     {
+       
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-    }
-    private void Update()
-    {
-        agent.SetDestination(target.position);
-        Aim();
-        if (agent.velocity.magnitude > 0)
-        {
-            anim.SetInteger("MoveIndex", Random.Range(0, 2));
-            anim.SetBool("IsMoving", true);
-            
-        }
-        else
-        {
-            anim.SetBool("IsMoving", false);
-        }
-        if (Vector3.Distance(agent.destination, transform.position) <= animationDistanceThreshold )
-        {
-            StartCoroutine(StopAgent());
-            anim.SetInteger("AttackIndex", Random.Range(0,5));
-            anim.SetTrigger("AttackTrigger");
-        } 
-        transform.position = agent.nextPosition;
     }
     private IEnumerator StopAgent()
     {
@@ -75,5 +55,30 @@ public class Enemy : MonoBehaviour
         Dashing = false;
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            agent.SetDestination(target.position);
+            Aim();
+            if (agent.velocity.magnitude > 0)
+            {
+                anim.SetInteger("MoveIndex", Random.Range(0, 2));
+                anim.SetBool("IsMoving", true);
 
+            }
+            else
+            {
+                anim.SetBool("IsMoving", false);
+            }
+            if (Vector3.Distance(agent.destination, transform.position) <= animationDistanceThreshold)
+            {
+                StartCoroutine(StopAgent());
+                anim.SetInteger("AttackIndex", Random.Range(0, 5));
+                anim.SetTrigger("AttackTrigger");
+            }
+            transform.position = agent.nextPosition;
+        }
+       
+    }
 }
