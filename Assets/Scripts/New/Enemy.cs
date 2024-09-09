@@ -18,12 +18,14 @@ public class Enemy : MonoBehaviour
     public float dashTime;  
     private bool Dashing = false;
    
+   
 
     private void Start()
     {
        
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        
     }
     private IEnumerator StopAgent()
     {
@@ -80,5 +82,6 @@ public class Enemy : MonoBehaviour
             transform.position = agent.nextPosition;
         }
        
+        
     }
 }

@@ -58,14 +58,16 @@ ModelImporter:
       - time: 0.41209018
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.5816555
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -101,28 +103,32 @@ ModelImporter:
       - time: 0.24910393
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.38255033
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.5167785
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.5771812
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -158,42 +164,48 @@ ModelImporter:
       - time: 0.19239375
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.2572707
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.4049217
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.45637584
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.621924
         functionName: AtivarPe
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.67114097
         functionName: DesativarPe
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -229,21 +241,24 @@ ModelImporter:
       - time: 0.5250896
         functionName: DashAttackImpulse
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: d7b89efd88bc5f544814f6e4e15dcf4b, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: d7b89efd88bc5f544814f6e4e15dcf4b,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.5358423
         functionName: AtivarDash
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.65995526
         functionName: DesativarDash
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -337,14 +352,16 @@ ModelImporter:
       - time: 0.6219239
         functionName: AtivarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.655481
+      - time: 0.6809407
         functionName: DesativarLanca
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

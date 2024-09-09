@@ -58,15 +58,19 @@ public class TargetLock : MonoBehaviour
         {
             AssignTarget();
         }
+
+       
     }
 
     private void AssignTarget()
     {
+
         if (isTargeting)
         {
             isTargeting = false;
             currentTarget = null;
             return;
+
         }
 
         if (ClosestTarget())
@@ -74,6 +78,8 @@ public class TargetLock : MonoBehaviour
             currentTarget = ClosestTarget().transform;
             isTargeting = true;
         }
+
+       
     }
 
     private void NewInputTarget(Transform target) // sets new input value.

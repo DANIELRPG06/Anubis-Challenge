@@ -8,8 +8,10 @@ public class EnemyStats : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public HealthBar healthBar;
-    public GameObject win;
-    private bool gameOver = false;
+    public GameObject inimigo;
+    Enemy enemy;
+    //public GameObject win;
+    //private bool gameOver = false;
 
 
 
@@ -17,7 +19,7 @@ public class EnemyStats : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        
+        enemy = GetComponent<Enemy>();
 
     }
 
@@ -30,13 +32,13 @@ public class EnemyStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            gameOver = true;
+            //gameOver = true;
 
+            Destroy(inimigo);
+            
+           
 
-            Time.timeScale = 0f;
-
-
-            win.SetActive(true);
+            //win.SetActive(true);
         }
 
 

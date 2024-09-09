@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class PlayerMovementV2 : MonoBehaviour
 {
     CharacterController controller;
@@ -27,14 +24,12 @@ public class PlayerMovementV2 : MonoBehaviour
     public float currentStamina;
     public float staminaRegenRate = 10f;
     public float sprintStaminaCost = 20f;
-    public float attackStaminaCost = 10f;
+    public float attackStaminaCost = 10f; 
     public float staminaRegenDelay = 1.0f;
     private float staminaRegenTimer = 0f;
     public float attackSpeed;
     private bool isAttacking;
     private bool isRunning;
-    
-    
 
     private void Start()
     {
@@ -80,16 +75,13 @@ public class PlayerMovementV2 : MonoBehaviour
             animator.SetBool("IsWalking", false);
         }
 
-        // Corrida e gasto de stamina
         if (Input.GetKey(KeyCode.LeftShift) && direction.magnitude >= 0.1f && currentStamina > 0)
         {
             isRunning = true;
             moveSpeed = sprintSpeed;
             animator.SetBool("IsRunning", true);
             currentStamina -= sprintStaminaCost * Time.deltaTime;
-            staminaRegenTimer = 0f; 
-           
-            
+            staminaRegenTimer = 0f;
         }
         else
         {
@@ -98,15 +90,12 @@ public class PlayerMovementV2 : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
 
-        // Ataque e gasto de stamina
         attackTimer += Time.deltaTime;
         comboTimer += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && currentStamina >= attackStaminaCost)
+
+        if (Input.GetMouseButtonDown(0))
         {
-            Attack();
-            currentStamina -= attackStaminaCost;
-            staminaRegenTimer = 0f; 
-            
+            Attack(); 
         }
 
         if (comboTimer >= comboResetTime)
@@ -114,23 +103,21 @@ public class PlayerMovementV2 : MonoBehaviour
             ResetCombo();
         }
 
-        // Regeneração de stamina
         if (currentStamina < maxStamina && staminaRegenTimer >= staminaRegenDelay)
         {
             currentStamina += staminaRegenRate * Time.deltaTime;
-            
         }
         staminaRegenTimer += Time.deltaTime;
 
         currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
-
         staminaSlider.value = currentStamina;
 
-        if(isAttacking)
+        if (isAttacking)
         {
             moveSpeed = attackSpeed;
         }
-        if(!isAttacking && !isRunning)
+
+        if (!isAttacking && !isRunning)
         {
             moveSpeed = defaultSpeed;
         }
@@ -169,5 +156,15 @@ public class PlayerMovementV2 : MonoBehaviour
         animator.ResetTrigger("Atk1");
         animator.ResetTrigger("Atk2");
         animator.ResetTrigger("Atk3");
+    }
+
+    
+    public void ConsumeStamina()
+    {
+        if (currentStamina >= attackStaminaCost)
+        {
+            currentStamina -= attackStaminaCost;
+            staminaRegenTimer = 0f; 
+        }
     }
 }

@@ -71,17 +71,27 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.07920792
+        functionName: ConsumeStamina
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a8a2e5c4a14ac904caaf2e5d6e718bd9,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.74049217
         functionName: Ativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.91722596
         functionName: Desativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -117,14 +127,24 @@ ModelImporter:
       - time: 0.67337805
         functionName: Ativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.7553041
+        functionName: ConsumeStamina
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a8a2e5c4a14ac904caaf2e5d6e718bd9,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.9239374
         functionName: Desativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
@@ -189,14 +209,24 @@ ModelImporter:
       - time: 0.32885906
         functionName: Ativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.3606789
+        functionName: ConsumeStamina
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a8a2e5c4a14ac904caaf2e5d6e718bd9,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.39597318
         functionName: Desativar
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 7cc5c7ef8e2844d4bb64163af450438c,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
