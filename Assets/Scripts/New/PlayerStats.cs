@@ -19,9 +19,16 @@ public class PlayerStats : MonoBehaviour
     public int cura;
     public GameObject sword;
     public NewDash newDash;
+    public GameObject respawnOne;
+    public GameObject respawnTwo;
+    public Boss_Door bossDoor;
+    CharacterController characterController;
+
    
    
     
+
+
 
 
     void Start()
@@ -30,6 +37,8 @@ public class PlayerStats : MonoBehaviour
         contagemPocoes = 0;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        characterController = GetComponent<CharacterController>();
+       
         
     }
     private void Update()
@@ -61,17 +70,24 @@ public class PlayerStats : MonoBehaviour
         
             if (currentHealth <= 0)
             {
-                currentHealth = 0;
-                gameOver = true;
+             characterController.enabled = false;
+             gameObject.transform.position = respawnOne.transform.position;
+             currentHealth = maxHealth;
+             healthBar.SetCurrentHealth(currentHealth);
+             characterController.enabled = true;
 
-                
-                Time.timeScale = 0f;
+             if (bossDoor.todosMortos)
+             {
+                characterController.enabled = false;
+                gameObject.transform.position = respawnTwo.transform.position;
+                currentHealth = maxHealth;
+                healthBar.SetCurrentHealth(currentHealth);
+                characterController.enabled = true;
+             }
 
-
-               death.SetActive(true);
-
-             
             }
+
+           
             
         
     }
@@ -114,11 +130,13 @@ public class PlayerStats : MonoBehaviour
             }
         }
 
+        
+
 
     }
 
-    
 
+   
 
 
 
@@ -126,7 +144,7 @@ public class PlayerStats : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.CompareTag("Pocao"))
+        if (other.gameObject.CompareTag("Pocao"))
         {
             avisoDeInteracao.SetActive(false);
         }
@@ -141,5 +159,6 @@ public class PlayerStats : MonoBehaviour
             avisoDeInteracao.SetActive(false);
         }
 
+       
     }
 }

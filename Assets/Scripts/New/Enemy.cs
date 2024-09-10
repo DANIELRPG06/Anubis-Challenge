@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     public float dashSpeed;
     public float dashTime;  
     private bool Dashing = false;
+    
+
    
    
 
@@ -81,7 +83,19 @@ public class Enemy : MonoBehaviour
             }
             transform.position = agent.nextPosition;
         }
-       
-        
+
+      
     }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            agent.isStopped = true;
+            anim.SetBool("IsMoving", false);
+        }
+    }
+
+
 }

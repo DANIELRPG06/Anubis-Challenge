@@ -10,11 +10,12 @@ TagManager:
   - Pocao
   - Sword
   - Boss
+  - BossDoor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post-processing
   - Water
   - UI
   - 
