@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using static UnityEditor.FilePathAttribute;
 
 public class EnemyStats : MonoBehaviour
 {
@@ -9,7 +11,10 @@ public class EnemyStats : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
     public GameObject inimigo;
-    Enemy enemy;
+    public Enemy enemy;
+    public Animator animator;
+    public NavMeshAgent agent;
+    private bool death;
     //public GameObject win;
     //private bool gameOver = false;
 
@@ -19,8 +24,20 @@ public class EnemyStats : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        enemy = GetComponent<Enemy>();
+        //enemy = GetComponent<Enemy>();
+        death = false;
+        
 
+    }
+
+    private void Update()
+    {
+        if (death)
+        {
+            agent.isStopped = true;
+            
+
+        }
     }
 
     public void MakeDammage(int dammage)
@@ -32,13 +49,19 @@ public class EnemyStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            //gameOver = true;
-
             Destroy(inimigo);
-            
+
+
+
+            animator.SetTrigger("BossDeath");
+            death = true;
+            enemy.aimSpeed = 0;
            
 
-            //win.SetActive(true);
+
+
+
+
         }
 
 

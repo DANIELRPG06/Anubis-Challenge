@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 1093470253547109943}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &1988417911660487770
 NavMeshAgent:
@@ -95,11 +95,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  agent: {fileID: 0}
   animationDistanceThreshold: 10
   stopDuration: 3
   aimSpeed: 100
   dashSpeed: 50
   dashTime: 0.4
+  enemyStats: {fileID: 3690890409937612583}
+  healthBar: {fileID: 0}
+  boss: {fileID: 7304647847988347084}
 --- !u!54 &3925697571500051190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -448,6 +452,9 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 0}
   inimigo: {fileID: 0}
+  enemy: {fileID: 0}
+  animator: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!1 &6490460959783421564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3263755400256528480, guid: b80fe6f205c73304b944f5b774c9522c,
@@ -513,8 +520,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 0.8270683, y: 4.3288703, z: 0.5721517}
-  m_Center: {x: -0.05965706, y: 1.6644355, z: 0.056524858}
+  m_Size: {x: 0.8270683, y: 7.505219, z: 0.5721517}
+  m_Center: {x: -0.059657022, y: 0.07627252, z: 0.056524575}
 --- !u!114 &2840150980329008967
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class PlayerStats : MonoBehaviour
@@ -13,7 +15,7 @@ public class PlayerStats : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
     public GameObject death; 
-    private bool gameOver = false;
+    //private bool gameOver = false;
     public TextMeshProUGUI pocoes;
     private int contagemPocoes;
     public int cura;
@@ -22,7 +24,8 @@ public class PlayerStats : MonoBehaviour
     public GameObject respawnOne;
     public GameObject respawnTwo;
     public Boss_Door bossDoor;
-    CharacterController characterController;
+    //CharacterController characterController;
+    public Enemy enemy;
 
    
    
@@ -37,7 +40,7 @@ public class PlayerStats : MonoBehaviour
         contagemPocoes = 0;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
        
         
     }
@@ -67,25 +70,19 @@ public class PlayerStats : MonoBehaviour
 
         healthBar.SetCurrentHealth(currentHealth);
 
-        
-            if (currentHealth <= 0)
-            {
-             characterController.enabled = false;
-             gameObject.transform.position = respawnOne.transform.position;
-             currentHealth = maxHealth;
-             healthBar.SetCurrentHealth(currentHealth);
-             characterController.enabled = true;
 
-             if (bossDoor.todosMortos)
-             {
-                characterController.enabled = false;
-                gameObject.transform.position = respawnTwo.transform.position;
-                currentHealth = maxHealth;
-                healthBar.SetCurrentHealth(currentHealth);
-                characterController.enabled = true;
-             }
 
-            }
+       // if (bossDoor.todosMortos && currentHealth <= 0)
+       // {
+            //respawnTwof();
+            //enemy.RespawnBoss();
+        //}
+        if (currentHealth <= 0)
+        {
+            RestartLevel();
+
+
+        }
 
            
             
@@ -136,7 +133,26 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-   
+   /*public void respawnOnef()
+   {
+        characterController.enabled = false;
+        gameObject.transform.position = respawnOne.transform.position;
+        currentHealth = maxHealth;
+        healthBar.SetCurrentHealth(currentHealth);
+        characterController.enabled = true;
+        
+       
+   }
+
+    public void respawnTwof()
+    {
+        characterController.enabled = false;
+        gameObject.transform.position = respawnTwo.transform.position;
+        currentHealth = maxHealth;
+        healthBar.SetCurrentHealth(currentHealth);
+        characterController.enabled = true;
+        
+    }*/
 
 
 
@@ -160,5 +176,14 @@ public class PlayerStats : MonoBehaviour
         }
 
        
+    }
+
+    public void RestartLevel()
+    {
+        
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+       
+        SceneManager.LoadScene(currentSceneName);
     }
 }
