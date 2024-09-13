@@ -26,6 +26,8 @@ public class PlayerStats : MonoBehaviour
     public Boss_Door bossDoor;
     //CharacterController characterController;
     public Enemy enemy;
+    public Button introButton;
+    public GameObject bau;
 
    
    
@@ -36,6 +38,8 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
+        bau.SetActive(false);
+        introButton.interactable = false;
         avisoDeInteracao.SetActive(false);
         contagemPocoes = 0;
         currentHealth = maxHealth;
@@ -89,6 +93,14 @@ public class PlayerStats : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Lava"))
+        {
+            RestartLevel();
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         
@@ -123,7 +135,9 @@ public class PlayerStats : MonoBehaviour
                 newDash.enabled = true;
                 sword.SetActive(true);
                 avisoDeInteracao.SetActive(false);
-                
+                introButton.interactable = true;
+                bau.SetActive(true);
+
             }
         }
 
@@ -132,27 +146,29 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+   
 
-   /*public void respawnOnef()
-   {
-        characterController.enabled = false;
-        gameObject.transform.position = respawnOne.transform.position;
-        currentHealth = maxHealth;
-        healthBar.SetCurrentHealth(currentHealth);
-        characterController.enabled = true;
-        
-       
-   }
 
-    public void respawnTwof()
+    /*public void respawnOnef()
     {
-        characterController.enabled = false;
-        gameObject.transform.position = respawnTwo.transform.position;
-        currentHealth = maxHealth;
-        healthBar.SetCurrentHealth(currentHealth);
-        characterController.enabled = true;
-        
-    }*/
+         characterController.enabled = false;
+         gameObject.transform.position = respawnOne.transform.position;
+         currentHealth = maxHealth;
+         healthBar.SetCurrentHealth(currentHealth);
+         characterController.enabled = true;
+
+
+    }
+
+     public void respawnTwof()
+     {
+         characterController.enabled = false;
+         gameObject.transform.position = respawnTwo.transform.position;
+         currentHealth = maxHealth;
+         healthBar.SetCurrentHealth(currentHealth);
+         characterController.enabled = true;
+
+     }*/
 
 
 

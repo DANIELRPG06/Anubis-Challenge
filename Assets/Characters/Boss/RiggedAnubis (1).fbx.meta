@@ -357,8 +357,40 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.6308725
+        functionName: AtivarSmoke
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.6809407
         functionName: DesativarLanca
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: DesativarSmoke
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.63590604
+        functionName: AtivarImpact
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6577181
+        functionName: DesativarImpact
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
           type: 3}

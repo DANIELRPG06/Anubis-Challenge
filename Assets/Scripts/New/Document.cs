@@ -9,5 +9,5 @@ public class Document : ScriptableObject
 {
     public int id;
     public string titulo;
-    public string informacao;
+    [TextArea]public string informacao;
 }
