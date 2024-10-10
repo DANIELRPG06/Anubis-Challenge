@@ -13,5 +13,17 @@ MonoBehaviour:
   m_Name: Documento.2
   m_EditorClassIdentifier: 
   id: 2
-  titulo: Morte
-  informacao: bololololoo
+  titulo: "Arrepender-se \xE9 um ato de coragem"
+  informacao: "Escrevo essas palavras com o cora\xE7\xE3o pesado, mas orgulhoso.
+    Orgulhoso por assumir minha perversidade. Eu ouvi sobre as lendas do Khopesh.
+    Uma arma capaz de me salvar das prova\xE7\xF5es do p\xF3s-vida. Se est\xE1 lendo
+    isso, Imagino que \xE0 essa altura, esteja ciente da sua situa\xE7\xE3o. \n\nN\xE3o
+    te iludas, a maldi\xE7\xE3o \xE9 real. Ela consome lentamente o corpo, a mente
+    e a alma. Um castigo dos Deuses feito para punir os tolos que ousaram se desviar
+    do caminho sagrado. S\xF3 agora eu pude compreender. N\xE3o existe nenhum artefato
+    que possa garantir tal coisa sem que o equil\xEDbrio seja afetado. Para os Deuses
+    n\xE3o importa os tesouros ou artefatos m\xEDsticos. O que realmente pesa \xE9
+    a justi\xE7a. Isso \xE9 o que mant\xEAm o nosso mundo e o al\xE9m em harmonia.\n\nArrependa-se,
+    n\xE3o apenas com palavras, mas com a\xE7\xF5es. Enfrente Anubis com coragem
+    e honestidade. Corrija o erro que cometeu ao desafiar os dom\xEDnios sagrados.
+    O resto est\xE1 na m\xE3o dos Deuses.\r"

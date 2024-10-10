@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Documento.1
   m_EditorClassIdentifier: 
   id: 1
-  titulo: "Maldi\xE7\xE3o"
-  informacao: eeeeeeiiiii mothafucker
+  titulo: Maldito seja Anubis
+  informacao: "Eu lutei e lutei com tudo que tinha. Enfrentei os monstros do Duat,
+    matei as criaturas que rastejam entre os mortos e encarei os servos de Anubis.
+    Mas n\xE3o importa o quanto eu tente, n\xE3o somos nada diante deles. A maldi\xE7\xE3o
+    que carregamos n\xE3o \xE9 apenas um fardo, \xE9 uma senten\xE7a. Uma morte lenta
+    e inevit\xE1vel, a qual nenhum homem mortal pode escapar.\n\nEu os amaldi\xE7oo.
+    Eu amaldi\xE7oo todos os deuses que riem de nossa dor. \n\nN\xE3o sei mais quanto
+    tempo vou aguentar.\n\nQue Anubis me encontre e fa\xE7a o que desejar. "

@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: "Maldi\xE7\xE3o"
   m_EditorClassIdentifier: 
   id: 0
-  titulo: "Para quem ler esta carta, saiba que sua sorte est\xE1 lan\xE7ada e seu
-    destino, selado. "
+  titulo: "Se est\xE1 lendo isso, Saiba que sua sorte est\xE1 lan\xE7ada, e seu destino,
+    selado."
   informacao: "Assim como voc\xEA, eu fui atra\xEDdo pela promessa de um tesouro
     capaz de me livrar dos males do p\xF3s-vida. Saqueei o dom\xEDnio dos mortos
     e roubei aquilo que pertence apenas aos deuses, guiado pelo medo e pela tola
     ilus\xE3o de que poderia escapar impune. Mas Anubis, o Guardi\xE3o das Almas,
-    n\xE3o esquece e n\xE3o perdoa. Eu tentei lutar, mas n\xE3o h\xE1 como derrotar
+    n\xE3o esquece e n\xE3o perdoa. \n\nEu tentei lutar, mas n\xE3o h\xE1 como derrotar
     um Deus. Ele me v\xEA, mesmo agora, enquanto escrevo estas palavras, nesta tumba
     escura onde fui condenado a definhar. Se est\xE1 lendo esta carta, significa
     que carrega a mesma maldi\xE7\xE3o que eu. E n\xE3o se engane, O senhor dos mortos
     n\xE3o tardar\xE1 a fazer sua presen\xE7a conhecida. Da mesma forma que n\xE3o
-    houve esperan\xE7a para mim, pode n\xE3o haver para voc\xEA. Espero que de alguma
-    forma, encontre for\xE7as em ti que eu n\xE3o tive, e tenha sucesso onde eu fracassei.
-    Aqui est\xE3o algumas dicas para come\xE7ar:  \n\nWASD = Mover   \nWASD + Shift
-    = Correr\nBot\xE3o esquerdo do mouse = Atacar\nBot\xE3o direito do mouse = Dash\nTab
-    = Travar e destravar vis\xE3o em inimigo\n\nBoa Sorte"
+    houve esperan\xE7a para mim, pode n\xE3o haver para voc\xEA. \n\nEspero que de
+    alguma forma, encontre for\xE7as em ti que eu n\xE3o tive, e tenha sucesso onde
+    eu fracassei. Aqui est\xE3o algumas dicas para come\xE7ar:  \n\nWASD = Mover  
+    \nWASD + Shift = Correr\nBot\xE3o esquerdo do mouse = Atacar\nBot\xE3o direito
+    do mouse = Dash\nTab = Travar e destravar vis\xE3o em inimigo\n Q = Usar po\xE7\xE3o
+    de cura\n\nBoa Sorte"

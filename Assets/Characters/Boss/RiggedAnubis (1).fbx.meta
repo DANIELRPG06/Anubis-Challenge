@@ -63,7 +63,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.5816555
+      - time: 0.54063714
         functionName: DesativarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -108,7 +108,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.38255033
+      - time: 0.34577522
         functionName: DesativarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -124,7 +124,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.5771812
+      - time: 0.56728023
         functionName: DesativarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -169,7 +169,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.2572707
+      - time: 0.25019857
         functionName: DesativarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -185,7 +185,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.45637584
+      - time: 0.44788927
         functionName: DesativarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -201,7 +201,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.67114097
+      - time: 0.6470957
         functionName: DesativarPe
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -349,15 +349,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.6219239
-        functionName: AtivarLanca
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.6308725
+      - time: 0.6110705
         functionName: AtivarSmoke
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
@@ -365,16 +357,8 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.6809407
-        functionName: DesativarLanca
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 1
-        functionName: DesativarSmoke
+      - time: 0.6219239
+        functionName: AtivarLanca
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
           type: 3}
@@ -389,8 +373,24 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.6577181
+      - time: 0.650646
         functionName: DesativarImpact
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6568954
+        functionName: DesativarLanca
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: DesativarSmoke
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c83d453f2e3c2c34d897f5210b856665,
           type: 3}

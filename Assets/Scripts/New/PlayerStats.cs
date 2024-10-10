@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 
 
@@ -28,10 +29,13 @@ public class PlayerStats : MonoBehaviour
     public Enemy enemy;
     public Button introButton;
     public GameObject bau;
+    public GameObject notificacao;
+    public float tempoAtivo;
+    private Collider tumbaCollider;
 
-   
-   
-    
+
+
+
 
 
 
@@ -44,6 +48,7 @@ public class PlayerStats : MonoBehaviour
         contagemPocoes = 0;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        notificacao.SetActive(false);
         //characterController = GetComponent<CharacterController>();
        
         
@@ -124,12 +129,15 @@ public class PlayerStats : MonoBehaviour
                 
                 avisoDeInteracao.SetActive(false);
                 Destroy(other.gameObject);
+                StartCoroutine(AtivarDesativar());
             }
         }
 
         if (other.gameObject.CompareTag("Tumba"))
         {
             avisoDeInteracao.SetActive(true);
+            tumbaCollider = other;
+
             if (Input.GetKey(KeyCode.E))
             {
                 newDash.enabled = true;
@@ -137,6 +145,9 @@ public class PlayerStats : MonoBehaviour
                 avisoDeInteracao.SetActive(false);
                 introButton.interactable = true;
                 bau.SetActive(true);
+                StartCoroutine(AtivarDesativar());
+                Physics.IgnoreCollision(tumbaCollider, GetComponent<Collider>());
+
 
             }
         }
@@ -146,7 +157,13 @@ public class PlayerStats : MonoBehaviour
 
     }
 
-   
+    private IEnumerator AtivarDesativar()
+    {
+        
+        notificacao.SetActive(true);
+        yield return new WaitForSeconds(tempoAtivo);
+        notificacao.SetActive(false);
+    }
 
 
     /*public void respawnOnef()

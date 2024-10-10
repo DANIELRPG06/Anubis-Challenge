@@ -5,48 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class ButtonTest : MonoBehaviour
 {
-    
+    public GameObject creditos;
+
+    public void Start()
+    {
+        creditos.SetActive(false);
+    }
 
     public void GoToGameScene()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Test");
+        Time.timeScale = 1.0f;
     }
 
-    void Update()
+    public void GoToMenuScene()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Time.timeScale = 1f;
-            RestartCurrentScene();
-        }
-
-        
-        
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Application.Quit();
-        }
-
-        
-       
-
+        SceneManager.LoadScene("Menu Principal");
     }
 
-    public void RestartCurrentScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
 
     public void Quit()
     {
         Application.Quit();
     }
-
-    public void QRcode()
+    public void Creditos()
     {
-
+        creditos.SetActive(true);
     }
+
 
     
 }

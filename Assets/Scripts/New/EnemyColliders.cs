@@ -55,7 +55,7 @@ public class EnemyColliders : MonoBehaviour
         impact.enabled = true;
         
     }
-    public void DesativarImpac()
+    public void DesativarImpact()
     {
         impact.enabled = false;
         

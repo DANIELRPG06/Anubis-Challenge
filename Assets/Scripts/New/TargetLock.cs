@@ -38,6 +38,15 @@ public class TargetLock : MonoBehaviour
 
     void Update()
     {
+        if (isTargeting && currentTarget == null)
+        {
+            
+            isTargeting = false;
+            mouseX = 0;
+            mouseY = 0;
+            return;
+        }
+
         if (!isTargeting)
         {
             mouseX = Input.GetAxis("Mouse X");

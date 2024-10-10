@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEditor.FilePathAttribute;
+
 
 public class EnemyStats : MonoBehaviour
 {
@@ -56,7 +56,9 @@ public class EnemyStats : MonoBehaviour
             animator.SetTrigger("BossDeath");
             death = true;
             enemy.aimSpeed = 0;
-           
+            gameObject.tag = "None";
+
+
 
 
 
