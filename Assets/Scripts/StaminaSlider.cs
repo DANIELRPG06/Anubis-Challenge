@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class StaminaSlider : MonoBehaviour
 {
-    public PlayerControlle playerController; // Reference to the PlayerControlle script
+    public PlayerControlle playerController; 
     private Slider staminaSlider;
 
     private void Start()
@@ -14,7 +14,7 @@ public class StaminaSlider : MonoBehaviour
 
     private void Update()
     {
-        // Update the Slider's value to represent the current stamina.
+        
         staminaSlider.value = playerController.currentStamina / playerController.maxStamina;
     }
 }
